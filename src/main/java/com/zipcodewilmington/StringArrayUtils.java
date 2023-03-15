@@ -75,7 +75,17 @@ public class StringArrayUtils {
      */ // TODO
     public static boolean isPalindromic(String[] array) {
 
-        return false;
+
+
+        //assigns array in reversed order to String[]reversedArr
+        String[] reversedArr = Arrays.copyOf(array, array.length);
+
+        //reverses the String[]array as an ArrayList
+        Collections.reverse(Arrays.asList(array));
+
+        //return boolean that shows if reversedArr is equal to array
+        //return reversedArr.equals(array);
+        return Arrays.equals(reversedArr, array);
     }
 
     /**
@@ -83,6 +93,21 @@ public class StringArrayUtils {
      * @return true if each letter in the alphabet has been used in the array
      */ // TODO
     public static boolean isPangramic(String[] array) {
+
+
+        //converts string of text containing alphabet into a char array
+        char[] alphabet = "abcdefghijklmnopqrstuvwxyz".toCharArray();
+        char[] strArrAsCharArr = new char[array.length];
+        for (int i = 0; i < array.length ; i++) {
+         //   strArrAsCharArr[i * array.length() + i] =
+
+        }
+
+        //returns a boolean true/false when checking if array contains alphabet
+        //boolean isPangramic= isPangramic(alphabet,array);
+
+
+
 
         return false;
     }
