@@ -133,7 +133,13 @@ public class StringArrayUtils {
      * @return array with identical contents excluding values of `value`
      */ // TODO
     public static String[] removeValue(String[] array, String valueToRemove) {
+        List<String>arrayList = new ArrayList<>(Arrays.asList(array));
+        for (int i = 0; i < array.length; i++) {
+            if(array[i]==valueToRemove){
+                arrayList .remove(arrayList[i]);
+            }
 
+        }
         return null;
     }
 
