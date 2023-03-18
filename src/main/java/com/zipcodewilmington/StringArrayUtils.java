@@ -102,7 +102,7 @@ public class StringArrayUtils {
         for (String s: alphabet) { //temporarily stores current element of alphabet in s
               {
             char c = s.charAt(0);
-            if('a') <= c && c <= 'z') {
+           // if('a') <= c && c <= 'z') {
                 checker[c-'a'] =true;
             }
             
@@ -110,7 +110,7 @@ public class StringArrayUtils {
 
         return false;
     }
-    }
+//    }
 
     /**
      * @param array array of String objects
@@ -118,8 +118,13 @@ public class StringArrayUtils {
      * @return number of occurrences the specified `value` has occurred
      */ // TODO
     public static int getNumberOfOccurrences(String[] array, String value) {
-
-        return 0;
+              int arrayCounter = 0;
+        for (int i = 0; i <= array.length-1; i++) {
+            if(Arrays.asList(array[i]).contains(value)){
+                arrayCounter++;
+            }
+        }
+        return arrayCounter;
     }
 
     /**
