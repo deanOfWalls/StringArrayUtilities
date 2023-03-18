@@ -80,9 +80,7 @@ public class StringArrayUtils {
         //assigns array in reversed order to String[]reversedArr
         String[] reversedArr = Arrays.copyOf(array, array.length);
 
-        Arrays.
-
-        //reverses the String[]array as an ArrayList
+       //reverses the String[]array as an ArrayList
         Collections.reverse(Arrays.asList(array));
 
         //return boolean that shows if reversedArr is equal to array
@@ -96,22 +94,22 @@ public class StringArrayUtils {
      */ // TODO
     public static boolean isPangramic(String[] array) {
 
+        String[] alphabet = {"a","b","c","d","e","f","g","h","i","j","k","l","m","n",
+                "o","p","q","r","s","t","u","v","w","x","y","z"}; //string for alphabet
 
-        //converts string of text containing alphabet into a char array
-        char[] alphabet = "abcdefghijklmnopqrstuvwxyz".toCharArray();
-        char[] strArrAsCharArr = new char[array.length];
-        for (int i = 0; i < array.length ; i++) {
-         //   strArrAsCharArr[i * array.length() + i] =
+        boolean[] checker = new boolean[26]; //boolean to check if character is found
 
+        for (String s: alphabet) { //temporarily stores current element of alphabet in s
+              {
+            char c = s.charAt(0);
+            if('a') <= c && c <= 'z') {
+                checker[c-'a'] =true;
+            }
+            
         }
 
-        //returns a boolean true/false when checking if array contains alphabet
-        //boolean isPangramic= isPangramic(alphabet,array);
-
-
-
-
         return false;
+    }
     }
 
     /**
