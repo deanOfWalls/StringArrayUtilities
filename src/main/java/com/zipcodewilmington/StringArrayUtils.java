@@ -102,7 +102,7 @@ public class StringArrayUtils {
         for (String s: alphabet) { //temporarily stores current element of alphabet in s
               {
             char c = s.charAt(0);
-            if('a') <= c && c <= 'z') {
+           // if('a') <= c && c <= 'z') {
                 checker[c-'a'] =true;
             }
             
