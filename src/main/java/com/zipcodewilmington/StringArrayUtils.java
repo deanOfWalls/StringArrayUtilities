@@ -94,24 +94,24 @@ public class StringArrayUtils {
      */ // TODO
     public static boolean isPangramic(String[] array) {
 
-        String[] alphabet = {"a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n",
-                "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"}; //string for alphabet
+        String[] alphabet = {"a","b","c","d","e","f","g","h","i","j","k","l","m","n",
+                "o","p","q","r","s","t","u","v","w","x","y","z"}; //string for alphabet
 
         boolean[] checker = new boolean[26]; //boolean to check if character is found
 
-        for (String s : alphabet) { //temporarily stores current element of alphabet in s
-            {
-//            char c = s.charAt(0);
-//            if('a') <= c && c <= 'z') {
-//                checker[c-'a'] =true;
-//            }
-//
-//        }
-
-
+        for (String s: alphabet) { //temporarily stores current element of alphabet in s
+              {
+            char c = s.charAt(0);
+            if('a') <= c && c <= 'z') {
+                checker[c-'a'] =true;
             }
-        }   return false;
+            
+        }
+
+        return false;
     }
+    }
+
     /**
      * @param array array of String objects
      * @param value value to check array for
